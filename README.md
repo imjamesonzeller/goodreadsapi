@@ -5,8 +5,8 @@ This project provides a simple API to retreive your current read from Goodreads 
 ## Features
 
 - **Current Read Retrieval**: Requests webpage of specific Goodreads user and uses beautiful soup to find string with current read information.
-- **GET Method**: Accepts `GET` requests for a simple, 15 word, word search.
-- **JSON Response**: Returns a JSON object representing the generated word search grid along with the words that are contained.
+- **GET Method**: Accepts `GET` requests to view current read.
+- **JSON Response**: Returns a JSON object containing the attributes of the user's current read.
 
 ## Requirements
 
@@ -69,7 +69,7 @@ Example response:
 
 ```json
 {
-  'attrs': "Lightlark by Alex Aster"
+  'attrs': 'Lightlark by Alex Aster'
 }
 ```
 
@@ -145,10 +145,6 @@ To make the API available, I’ve containerized the application using Docker.
 
 ## Conclusion
 
-The Word Search API is a fun and simple tool to see your Goodreads current read. This project demonstrates my ability to work with both backend technologies, as well as my familiarity with Docker and cloud-based hosting.
+The Goodreads API is a fun and simple tool to see your Goodreads current read. This project demonstrates my ability to work with both backend technologies, as well as my familiarity with Docker and cloud-based hosting.
 
 Feel free to see it in use on the website or directly interact with the API by cloning it!
-
-## License
-
-This project is open source and available under the MIT License.
